@@ -1,0 +1,43 @@
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+p{
+    margin: 0;
+    padding: 2px 5px 0 5px;
+    text-align: center;
+}
+.inventory-list{
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: min-content;
+    
+    margin: 5px;
+    padding: 1px;
+
+    position: absolute;
+    border: 1px solid black;
+}
+.inventory-list>div:nth-child(1){
+    border-bottom: 1px solid black;
+}
+.inventory-list>div:nth-child(even){
+    background-color: lightgray;
+}
+
+.inventory-row{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+
+    grid-template-rows: 1fr;
+    row-gap: 0;
+
+    margin: 0;
+    padding: 0;
+}
+.quantity{
+    justify-self: end;
+}
